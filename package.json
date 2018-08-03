@@ -1,6 +1,6 @@
 {
   "name": "ipa-distance",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Levenshtein distance between IPA phoneme",
   "main": "src/ipa-distance-factory.js",
   "directories": {
