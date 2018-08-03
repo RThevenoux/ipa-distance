@@ -1,0 +1,43 @@
+{
+  "name": "ipa-distance",
+  "version": "0.1.0",
+  "description": "Levenshtein distance between IPA phoneme",
+  "main": "src/ipa-distance-factory.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "node data-source/data-builder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RThevenoux/ipa-distance.git"
+  },
+  "keywords": [
+    "IPA",
+    "distance",
+    "Levenshtein",
+    "phonetic",
+    "alphabet",
+    "international"
+  ],
+  "author": "Rémi THEVENOUX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RThevenoux/ipa-distance/issues"
+  },
+  "homepage": "https://github.com/RThevenoux/ipa-distance#readme",
+  "files": [
+    "src/*"
+  ],
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "csv": "^3.1.0"
+  }
+}
