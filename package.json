@@ -39,5 +39,8 @@
   "devDependencies": {
     "mocha": "^5.2.0",
     "csv": "^3.1.0"
+  },
+  "dependencies": {
+    "ipa-parser": "^0.1.0"
   }
 }
