@@ -33,7 +33,7 @@ describe("Factory", () => {
         });
     });
 
-    describe("IpaDistanceFactory", ()=>{
+    describe("IpaDistanceFactory", () => {
         var factory = new IpaDistanceFactory();
 
         it("should create a distance", () => {
@@ -46,5 +46,14 @@ describe("Factory", () => {
             let distance2 = factory.create();
             assert.equal(distance1 == distance2, true);
         });
+    })
+});
+
+describe("IpaDistance", () => {
+    let factory = new IpaDistanceFactory();
+    let distance = factory.create();
+
+    it("should be 0 if same IPA", () => {
+        assert.equal(distance.compute("a", "a"), 0);
     })
 });

@@ -16,7 +16,7 @@ module.exports = class FeatureSetSequenceDistance {
     if (a.length === 0) return b.length * this.insertionCost;
     if (b.length === 0) return a.length * this.insertionCost;
 
-    let matrix = _initMatrix(a, b);
+    let matrix = this._initMatrix(a, b);
 
     // Fill in the matrix
     for (let i = 1; i <= b.length; i++) {

@@ -12,7 +12,7 @@ module.exports = class Mapper {
    * @returns {FeatureSet[]}
    */
   ipaToFeatureSets(ipa){
-    let phonemes = this.parser.parse(ipa);
+    let phonemes = this.parser.parsePhonemes(ipa);
     return phonemes.map(p => this.phonemeToFeatureSet(p));
   }
 
